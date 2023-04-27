@@ -1,0 +1,26 @@
+
+.left {
+    width: 320px;
+    height: 800px;
+    background-color: rgb(250, 224, 255);
+    border-radius: 20px;
+    margin-right: 100px;
+    box-shadow: 15px 5px 5px rgb(174, 142, 174);
+    
+
+}
+i{
+    color: rgb(218, 190, 236);
+    margin-left: 30px;
+    margin-top: 30px;
+    width: 100x;
+    height: 100px;
+    font-size: 50px;
+
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    margin-left: 200px;
+    margin-bottom: 15px;
+}

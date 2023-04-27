@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200&family=Open+Sans:wght@300&family=Sassy+Frass&family=Shadows+Into+Light&family=Spectral:ital,wght@1,200&display=swap');
+@import url(rigth.css);
+@import url(left.css);
+
+
+
+
+
+#boss {
+    width: 100%;
+    height: 900px;
+    background-color: #F2F2F5;
+    background: linear-gradient(#d5b2e4, #ffffff); 
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#id{
+    background-color: rgb(185, 154, 182);
+   }
+
+
+.cover-image{
+    width:250px;
+    height: 250px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+.title2{
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: 200px;
+    font-family: 'Karla', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Sassy Frass', cursive;
+    font-family: 'Shadows Into Light', cursive;
+    font-family: 'Spectral', serif;
+    margin-bottom: 20px;
+
+}
+.tit{
+
+    font-size: 15px;
+    font-weight: 10;
+    font-family: 'Karla', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Sassy Frass', cursive;
+    font-family: 'Shadows Into Light', cursive;
+    font-family: 'Spectral', serif;
+    margin-bottom: 50px;
+    margin-left: 15px;
+    
+}
+.heart-icon{
+  font-variation-settings: 'FILL' 0,
+                           'wght' 400,
+                           'GRAD' 0,
+                           'opsz' 48;
+  margin-right: 10px;
+
+  
+}
+
+
+.heart-icon:hover{
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48;
+
+    color: #b300ff;
+    
+
+}
+.playani {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.ani{
+    display: block;
+    position: relative;
+    background-color: #b300ff;
+    height: 100%;
+    width: 5px;
+    border-radius: 50px;
+    margin: 0 7px;
+    animation: animate 1.2s linear infinite;
+}
+
+@keyframes animate{
+    50%{
+        height:50%
+    }
+    100%{
+        height:100%
+    }
+}
+
+.ani:nth-child(1){
+    animation-delay: 0s;
+}
+.ani:nth-child(2){
+    animation-delay: 0.3s;
+}
+.ani:nth-child(3){
+    animation-delay: 0.6s;
+}
+.ani:nth-child(4){
+    animation-delay: 0.9s;
+}
+.ani:nth-child(5){
+    animation-delay: 0.6s;
+}
+.ani:nth-child(6){
+    animation-delay: 0.3s;
+}
+.ani:nth-child(7){
+    animation-delay: 0s;
+}
+
+
+.song-image{
+    height: 70px;
+    width: 70px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    margin-left:30px;
+}
+
+/* .tra{
+    display: flex;
+    margin-top:30px;
+    justify-content: center;
+    margin-bottom: 10px;
+} */
+
+.melon{
+    color:rgb(189, 89, 189);
+    font-size: 30px;
+}
+
+
+
+.photo{
+    display: flex;
+    margin-bottom: 100px;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  html {
+    background: cover;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* .box {
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+    box-shadow: 0 2px 30px rgba(black, .2);
+    background: lighten(#f0f4c3, 10%);
+    position: relative;
+    overflow: hidden;
+    transform: translate3d(0, 0, 0);
+  } */
+  
+  .wave {
+    opacity: .4;
+    position: absolute;
+    top: 3%;
+    left: 50%;
+    background: rgb(195, 141, 239);
+    width: 500px;
+    height: 500px;
+    margin-left: -250px;
+    margin-top: -250px;
+    transform-origin: 50% 48%;
+    border-radius: 43%;
+    animation: drift 3000ms infinite linear;
+  }
+  
+  .wave.-three {
+    animation: drift 5000ms infinite linear;
+  }
+  
+  .wave.-two {
+    animation: drift 7000ms infinite linear;
+    opacity: .1;
+    background: yellow;
+  }
+  
+  .box:after {
+    content: '';
+    display: block;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(#e8a, 1), rgba(#def, 0) 80%, rgba(white, .5));
+    z-index: 11;
+    transform: translate3d(0, 0, 0);
+  }
+  
+  .title {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    line-height: 300px;
+    text-align: center;
+    transform: translate3d(0, 0, 0);
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: .4em;
+    font-size: 24px;
+    text-shadow: 0 1px 0 rgba(black, .1);
+    text-indent: .3em;
+  }
+  @keyframes drift {
+    from { transform: rotate(0deg); }
+    from { transform: rotate(360deg); }
+  }
